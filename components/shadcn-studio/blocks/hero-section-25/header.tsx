@@ -45,29 +45,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
         className
       )}
     >
-      <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>
-        {/* Logo */}
-        <a href='#'>
-          <Logo className='gap-3' />
-        </a>
 
-        {/* Navigation */}
-        <HeroNavigation01 navigationData={navigationData} navigationClassName='md:block' />
-
-        {/* Login Button */}
-        <Button className='rounded-lg max-md:hidden' asChild>
-          <a href='#'>Login</a>
-        </Button>
-
-        {/* Navigation for small screens */}
-        <div className='flex gap-4 md:hidden'>
-          <Button className='rounded-lg' asChild>
-            <a href='#'>Login</a>
-          </Button>
-
-          <HeroNavigation01SmallScreen navigationData={navigationData} screenSize={767} triggerClassName='md:hidden' />
-        </div>
-      </div>
     </header>
   )
 }
